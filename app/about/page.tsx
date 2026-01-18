@@ -5,7 +5,8 @@ import Link from "next/link";
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-[#03030A] text-white">
+        <main className="relative min-h-screen overflow-hidden bg-linear-to-br from-black via-emerald-950/80 to-cyan-950/80 text-white">
+
             {/* Background glow */}
             <div className="pointer-events-none fixed inset-0 -z-10">
                 <div className="absolute inset-0 bg-linear-to-b from-emerald-900/30 via-black to-black" />
@@ -71,7 +72,7 @@ export default function AboutPage() {
                         },
                         {
                             title: "Exploring",
-                            text: "I'm focused on strengthening my games development funcamentals by building real projects in Unity and Unreal Engine, working on player movement, physics, and gameplay systems. Alongside this, I'm learning how AI and machine learning concepts can be applied to games to create smarter, more adaptive player experiences, while improving my workflow and development quality.",
+                            text: "Building game systems in Unity and Unreal Engine, refining gameplay mechaincs, and learning how AI can be applied to create smarter and more engaging games.",
                         },
                         {
                             title: "Goals",
@@ -97,7 +98,7 @@ export default function AboutPage() {
 
                 <Link
                     href="/projects"
-                    className="mt-8 inline-block text-xs bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent underline-offset-4 hover:underline hover:scale-110 hover:drop-shadow-[0_0_6px_rgba(16,185,129,0.6)]"
+                    className="mt-8 inline-block text-xs bg-linear-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent underline-offset-4 hover:underline hover:scale-110 hover:drop-shadow-[0_0_6px_rgba(16,185,129,0.6)]"
 
                 >
                     See my projects →
