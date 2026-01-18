@@ -1,7 +1,14 @@
+import ContactForm from "../components/ContactForm";
+
 export default function ContactPage() {
-    return (
-        <main className="min-h-screen">
-            {/* Contact Page */}
-        </main>
-    );
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-linear-to-br from-black via-emerald-950/80 to-cyan-950/80">
+      
+      {/* Soft glow overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.12),transparent_60%)] pointer-events-none" />
+      
+      {/* Page content */}
+      <ContactForm />
+    </div>
+  );
 }
